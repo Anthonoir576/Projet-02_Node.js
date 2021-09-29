@@ -9,6 +9,8 @@ const server = express();
 /* ######################################### */
 
 
+
+
 /* ###########    SERVER     ############### */
 
 // configuration routes
@@ -19,6 +21,13 @@ server.get('/', function(request, response){
 
 });
 
+// Ecoute serveur
+server.listen(8080, () => {
 
+    console.log('SERVEUR EN ECOUTE');
+
+});
+
+//  ==>  http://localhost:8080/  <==
 
 /* ######################################### */
